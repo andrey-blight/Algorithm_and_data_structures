@@ -41,6 +41,7 @@ public:
         for (int i = n - 2 / 2; i >= 0; --i)
             sift_down(i);
     }
+    ~BinaryHeap() { delete[] heap; }
     int pop()
     {
         // Удаляем верхний элемент. Асимптотика O(log n)
