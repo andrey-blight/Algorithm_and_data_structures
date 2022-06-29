@@ -49,8 +49,8 @@ int main()
     {
         int l, r;
         cin >> l >> r;
-        if (can_add(l, r))
-            add(l, r), cout << "Yes\n";
+        if (can_add(l, r - 1))
+            add(l, r - 1), cout << "Yes\n";
         else
             cout << "No\n";
     }
